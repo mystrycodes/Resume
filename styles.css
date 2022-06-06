@@ -1,0 +1,369 @@
+/* ########################## CSS Reset ##################### */
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ############################ General Styling ############################ */
+:root{
+    --color-primary:#293462;
+    --color-secondary:#F24C4C;
+    --color-tertiary:#D94444;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #94d9ea;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ################## Main Content Styling ############################# */
+.main-content{
+    min-height: 100vh;
+    max-width: 1200px;
+    width: 80vw;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+.left{
+    grid-column: span 2;
+    height: 100%;
+    background-color: var(--color-primary);
+}
+.right{
+    grid-column: span 5;
+    background-color: #f7f7f7;
+}
+
+/* ######################### left section ########################## */
+.left-content{
+    padding: 2rem 3rem;
+}
+.profile{
+    width: 100%;
+    margin-bottom: 5rem;
+}
+.profile img{
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+.name{
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+.position
+{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--color-tertiary);
+    text-align: center;
+}
+/* #######################Contact Infor ################# */
+.main-title{
+    color: #fff;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-size: 2rem;
+}
+.contact-info ul{
+    color: var(--color-tertiary);
+    margin-bottom: 5rem;
+}
+.contact-info ul li{
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+.contact-info ul li i{
+    font-size: 1.8rem;
+    color: var(--color-secondary);
+}
+/* ################## Skills Section ####################### */
+.skills-section ul li{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 2rem;
+}
+.progress-bar{
+    grid-column: span 3;
+    align-self: center;
+    justify-self: right;
+    width: 100%;
+    height: 0.8rem;
+    background-color: #8A2B2B;
+    position: relative;
+}
+.progress{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color:var(--color-secondary);
+}
+.py-progress{
+    width: 70%;
+}
+.js-progress{
+    width: 40%;
+}
+.java-progress{
+    width: 50%;
+}
+.html-progress{
+    width: 70%;
+}
+.css-progress{
+    width:65%;
+}
+.cpp-progress{
+    width: 65%;
+}
+.c-progress{
+    width: 50%;
+}
+.sql-progress{
+    width: 30%;
+}
+.flask-progress{
+    width: 35%;
+}
+.skill-title{
+    grid-column: span 1;
+    align-self: center;
+    justify-self: left;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    padding-right:1rem ;
+}
+.skills-section{
+    margin-bottom: 5rem;
+}
+/* #################### References Section ############################## */
+.ref-group{
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.ref-group ul{
+    font-size: 1.2rem;
+}
+.ref-group ul li i{
+    font-size: 1.3rem;
+    color: var(--color-secondary);
+    margin-right: 1rem;
+}
+.ref-position{
+    font-size:1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+}
+.sub-title{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+}
+/* ################################3Right Section Styling ############################# */
+.right-content{
+    padding: 2rem 3rem;
+}
+.right-main-title{
+    color: var(--color-secondary);
+    font-size: 2rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.right-main-title::after{
+    content:"";
+    width: 60%;
+    height: 0.2rem;
+    position:absolute ;
+    top: 1.5rem;
+    right: 0;
+    background-color: #656C8A;
+    border-radius: 2rem;
+}
+.about-section{
+    margin-bottom: 2rem;
+}
+.about-section p{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: #242E58;
+}
+/* ########################Education Section ######################### */
+.education-section
+{
+    margin-bottom: 3rem;
+}
+.timeline{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.tl-title-1{
+    font-size: 1.8rem;
+    color: #242E58;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+.tl-title-2{
+    font-size: 1.8rem;
+    color: var(--color-tertiary);
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+.para{
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    color: #242E58;
+}
+.tl-content{
+    padding-left: 3rem;
+    border-left:0.15rem solid #656C8A;
+    padding-bottom: 2rem;
+    position: relative;
+}
+.tl-title-2::before{
+    content: "";
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: var(--color-secondary);
+    border-radius: 0.6rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%);
+}
+/* ############################### Test scores styling ##################################### */
+.test{
+    margin-bottom: 2rem;
+}
+/* ###################################Hobbies section styling ########################### */
+.row{
+    color: var(--color-primary);
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+}
+.hobby{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    width: 15rem;
+    padding: 2rem;
+    border: 1rem solid var(--color-primary);
+    border-radius: 50%;
+}
+.hobby i{
+    font-size: 3rem;
+}
+.hobby p{
+    font-size: 1.5rem;
+}
+
+/* Media Queries */
+@media screen and (max-width:1199px){
+    .main-content{
+        width: 90%;
+    }
+    .hobby{
+        height: 12rem;
+        width: 12rem;
+    }
+}
+@media screen and (max-width:992px) {
+    html{
+        font-size: 60%;
+    }
+    .left{
+        grid-column: span 3;
+    }
+    .right{
+        grid-column: span 4;
+    }
+    .hobby{
+        height: 12rem;
+        width: 12rem;
+    }
+    .row{
+        justify-items: center;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 3rem;
+    }
+    .timeline{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (max-width:840px){
+    html{
+        font-size: 57%;
+    }
+    .hobby{
+        width: 10rem;
+        height: 10rem;
+        border: 0.7rem solid var(--color-primary);
+        align-self: center;
+    }
+    .para{
+        margin-top: 0.5rem;
+    }
+}
+@media screen and (max-width:666px) {
+    .main-content{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .profile{
+        width: 60%;
+        margin: 0 auto 5rem auto;
+    }
+    .main-title{
+        text-align: center;
+    }
+    .contact-info ul li{
+        flex-direction: column;
+        font-size: 1.7rem;
+    }
+    .contact-info ul li i{
+        font-size: 150%;
+    }
+    .skills-section ul li
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (max-width:460px)
+{
+    .profile{
+        width: 80%;
+    }
+    .right-main-title::after
+    {
+        width: 35%;
+    }
+}
